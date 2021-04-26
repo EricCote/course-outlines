@@ -1,6 +1,6 @@
 import React from 'react';
 import Menu from './Menu';
-import { useStaticQuery, graphql } from 'gatsby';
+//import { useStaticQuery, graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import { Container } from 'reactstrap';
 import './custom.scss';

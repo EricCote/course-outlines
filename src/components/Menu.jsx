@@ -16,7 +16,7 @@ import {
 
 import { useTranslation } from 'react-i18next';
 import { LocalizedLink as Link, useLocalization } from 'gatsby-theme-i18n';
-//import { useLocation } from '@reach/router';
+import { useLocation } from '@reach/router';
 
 //import { useIdent } from './AuthProvider';
 //import { useMember } from './MemberProvider';
@@ -26,7 +26,15 @@ export default function Menu() {
   //const ident = useIdent();
   //const member = useMember();
   const { t } = useTranslation();
-  const { locale } = useLocalization();
+
+  const { locale, defaultLang } = useLocalization();
+  const location = useLocation();
+
+  let originalPath = location.pathname;
+  if (locale !== defaultLang) {
+    const [, , ...rest] = originalPath.split('/');
+    originalPath = `/${rest.join('/')}`;
+  }
 
   const toggle = () => {
     setOpen(!isOpen);
@@ -61,7 +69,7 @@ export default function Menu() {
               <NavItem>
                 <NavLink
                   tag={Link}
-                  to='/'
+                  to={originalPath}
                   language={locale === 'en' ? 'fr' : 'en'}
                 >
                   {locale === 'en' ? 'Français' : 'English'}
@@ -84,15 +92,6 @@ export default function Menu() {
 //   const [color, setColor] = useState(
 //     props.inlineMenu ? 'transparent' : 'primary'
 //   );
-
-//   const { locale, defaultLang } = useLocalization();
-//   const location = useLocation();
-
-//   let originalPath = location.pathname;
-//   if (locale !== defaultLang) {
-//     const [, , ...rest] = originalPath.split('/');
-//     originalPath = `/${rest.join('/')}`;
-//   }
 
 //   const { t } = useTranslation();
 
