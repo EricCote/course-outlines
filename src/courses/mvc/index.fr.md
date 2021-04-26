@@ -1,4 +1,8 @@
-
+---
+title: 'Updating MVC apps to ASP.NET 5/6'
+date: '2021-03-05'
+slug: 'AspNet5'
+---
 
 ### ASP.NET Core
 * Features of .NET core

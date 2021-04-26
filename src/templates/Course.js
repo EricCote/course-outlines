@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 //import { Container } from 'reactstrap';
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 
 const BlogPostTemplate = ({ data }) => {
   return data.mdx ? (
