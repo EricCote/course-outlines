@@ -26,7 +26,7 @@ const Layout = ({ pageTitle, children }) => {
       <Menu />
       <Container>
         <main>
-          <h1 style={{ marginTop: 100 }}>{pageTitle}</h1>
+          <h1 style={{ marginTop: 100, marginBottom: 20 }}>{pageTitle}</h1>
           {children}
         </main>
       </Container>

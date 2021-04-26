@@ -11,7 +11,7 @@ const BlogPage = ({ data }) => {
       <ul>
         {data.allMdx.nodes.map((node) => {
           return (
-            <li key={node.frontmatter.slug}>
+            <li key={node.frontmatter.slug} style={{ listStyleType: 'none' }}>
               <article>
                 <h2>
                   <Link to={'courses/' + node.frontmatter.slug}>
