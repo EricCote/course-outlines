@@ -1,0 +1,27 @@
+$dark-blue: #344880;
+$light-blue: #60d9fa;
+$dark-yellow: #ffc000;
+
+//$dark: $dark-blue;
+
+$primary: $dark-blue;
+$secondary: $dark-yellow;
+
+@import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Days+One&family=Permanent+Marker&display=swap');
+
+.text-ternary {
+  color: $light-blue !important;
+}
+.bg-ternary {
+  background-color: $light-blue !important;
+}
+
+//will smooth scroll to another point in the document
+html {
+  scroll-behavior: smooth;
+}
+//will scroll the section element below the menu, 60px down
+section {
+  scroll-margin-top: 59px;
+}
