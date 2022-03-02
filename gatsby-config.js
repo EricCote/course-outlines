@@ -1,24 +1,25 @@
 module.exports = {
   siteMetadata: {
-    title: 'Course Outlines',
-    description: 'Upcoming courses',
-    siteUrl: 'https://courses.coteexpert.com',
-    author: 'Eric Cote',
+    title: "Course Outlines",
+    description: "Upcoming courses",
+    siteUrl: "https://courses.coteexpert.com",
+    author: "Eric Cote",
   },
   plugins: [
-    'gatsby-plugin-sass',
-    'gatsby-plugin-gatsby-cloud',
-    'gatsby-plugin-image',
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sitemap',
+    "gatsby-plugin-sass",
+    "gatsby-plugin-gatsby-cloud",
+    "gatsby-plugin-image",
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sitemap",
     {
-      resolve: 'gatsby-plugin-manifest',
+      resolve: "gatsby-plugin-manifest",
       options: {
-        icon: 'src/images/icon.png',
+        icon: "src/images/icon.png",
       },
     },
-    'gatsby-plugin-mdx',
-    'gatsby-plugin-sharp',
+    "gatsby-plugin-mdx",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     {
       resolve: `gatsby-theme-i18n`,
       options: {
@@ -31,30 +32,30 @@ module.exports = {
       options: {
         locales: `./i18n/languages`,
         i18nextOptions: {
-          ns: ['translation', 'blog', 'lang'],
-          defaultNS: 'lang',
+          ns: ["translation", "blog", "lang"],
+          defaultNS: "lang",
         },
       },
     },
-    'gatsby-transformer-sharp',
+
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: 'images',
-        path: './src/images/',
+        name: "images",
+        path: "./src/images/",
       },
-      __key: 'images',
+      __key: "images",
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: 'pages',
-        path: './src/pages/',
+        name: "pages",
+        path: "./src/pages/",
       },
-      __key: 'pages',
+      __key: "pages",
     },
     {
-      resolve: 'gatsby-plugin-react-svg',
+      resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
           include: /\.svg$/,
