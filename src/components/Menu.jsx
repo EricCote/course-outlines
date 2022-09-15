@@ -15,7 +15,7 @@ import {
 } from 'reactstrap';
 
 import { useTranslation } from 'react-i18next';
-import { LocalizedLink as Link, useLocalization } from 'gatsby-theme-i18n';
+import { LocalizedLink as Link, useLocalization } from '@ericcote/gatsby-theme-i18n';
 import { useLocation } from '@reach/router';
 
 //import { useIdent } from './AuthProvider';

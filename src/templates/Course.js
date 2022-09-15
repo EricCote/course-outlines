@@ -1,18 +1,16 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { MDXRenderer } from "gatsby-plugin-mdx";
-//import { Container } from 'reactstrap';
 import Layout from "../components/Layout";
 import { useTranslation } from "react-i18next";
 
-const BlogPostTemplate = ({ data }) => {
+const BlogPostTemplate = ({ data, children }) => {
   const { t } = useTranslation();
   return data.mdx ? (
     <Layout pageTitle={data.mdx.frontmatter.title}>
       <p>
         {t("modified")}: {data.mdx.frontmatter.date}
       </p>
-      <MDXRenderer>{data.mdx.body}</MDXRenderer>
+       {children}
     </Layout>
   ) : (
     <p>nothing!</p>

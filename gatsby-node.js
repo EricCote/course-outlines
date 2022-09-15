@@ -1,4 +1,5 @@
 exports.createPages = async ({ actions, graphql, reporter }) => {
+  const courseTemplate = require.resolve(`./src/templates/Course.js`);
   const { createPage } = actions;
 
   const result = await graphql(`
@@ -9,6 +10,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             frontmatter {
               slug
             }
+            internal {
+              contentFilePath
+            }
           }
         }
       }
@@ -18,7 +22,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   result.data.allMdx.edges.forEach(({ node }) => {
     createPage({
       path: "courses/" + node.frontmatter.slug,
-      component: require.resolve(`./src/templates/Course.js`),
+      component: `${courseTemplate}?__contentFilePath=${node.internal.contentFilePath}`,
       context: {
         // Data passed to context is available
         // in page queries as GraphQL variables.
