@@ -14,7 +14,10 @@ const BlogPage = ({ data }) => {
             <li key={node.frontmatter.slug} style={{ listStyleType: "none" }}>
               <article>
                 <h2>
-                  <Link to={"courses/" + node.frontmatter.slug}>
+                  <Link
+                    className="fw-light"
+                    to={"courses/" + node.frontmatter.slug}
+                  >
                     {node.frontmatter.title}
                   </Link>
                 </h2>

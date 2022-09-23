@@ -1,9 +1,9 @@
-import React from 'react';
-import Menu from './Menu';
+import React from "react";
+import Menu from "./Menu";
 //import { useStaticQuery, graphql } from 'gatsby';
-import { Helmet } from 'react-helmet';
-import { Container } from 'reactstrap';
-import './custom.scss';
+import { Helmet } from "react-helmet";
+import { Container } from "reactstrap";
+import "./custom.scss";
 
 const Layout = ({ pageTitle, children }) => {
   // const data = useStaticQuery(graphql`
@@ -26,7 +26,9 @@ const Layout = ({ pageTitle, children }) => {
       <Menu />
       <Container>
         <main>
-          <h1 style={{ marginTop: 100, marginBottom: 20 }}>{pageTitle}</h1>
+          <h1 style={{ marginTop: 100, marginBottom: 20 }} className="fw-light">
+            {pageTitle}
+          </h1>
           {children}
         </main>
       </Container>
