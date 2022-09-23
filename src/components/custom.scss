@@ -7,8 +7,15 @@ $dark-yellow: #ffc000;
 $primary: $dark-blue;
 $secondary: $dark-yellow;
 
-@import '~bootstrap/scss/bootstrap';
-@import url('https://fonts.googleapis.com/css2?family=Days+One&family=Permanent+Marker&display=swap');
+@import "~bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Days+One&family=Permanent+Marker&display=swap");
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 300;
+}
 
 .text-ternary {
   color: $light-blue !important;
