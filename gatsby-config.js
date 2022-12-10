@@ -18,8 +18,6 @@ module.exports = {
       },
     },
     "gatsby-plugin-mdx",
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
     {
       resolve: `@ericcote/gatsby-theme-i18n`,
       options: {

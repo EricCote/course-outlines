@@ -38,7 +38,7 @@ export const queries2 = graphql`
   query BlogPosts($locale: String!) {
     allMdx(
       filter: { fields: { locale: { eq: $locale } } }
-      sort: { order: DESC, fields: frontmatter___date }
+      sort: { frontmatter: { date: DESC } }
     ) {
       nodes {
         frontmatter {
