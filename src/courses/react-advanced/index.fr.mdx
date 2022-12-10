@@ -1,6 +1,6 @@
 ---
 title: "React avancé"
-date: "2022-11-01"
+date: "2022-12-09"
 slug: "react-advanced"
 ---
 
@@ -25,3 +25,80 @@ Remix, sécurité et bien plus.
 ## Contenu du cours
 
 ---
+
+### Context
+
+- Forage de propriétés (property drilling)
+- Qu'est-ce qu'un contexte?
+- Création de contexte avec createContext()
+- Utilisation de providers
+- Consommer le contexte avec des hooks
+- Mettre à jour le contexte
+
+### Patrons d'architecture React
+
+- Séparation des préoccupations dans nos composants
+- Composants d'ordre supérieur
+- Props de Rendu
+- Créer un hook personnalisé
+- Réutiliser les composantes
+
+### Patron réducteur (reducer)
+
+- Remplacer l'état par des reducers
+- Piliers: Storage, Dispatch, Reducer
+- Générateurs d'action
+- Appeler useReducer()
+
+### Toolkit Redux
+
+- Utiliser configureStore() pour créer un store Redux
+- Générer des reducers et des actions avec des slices
+- Modifier l'état avec "immer"
+- Consommer avec le Hook Query
+
+### Récupérer des données avec Redux RTK Query
+
+- Générer un consommateur d'API (API slice)
+- Générer des reducteurs et des actions avec des slices
+- Configurer le middleware pour activer le caching, l'invalidation, et le polling
+- Filtrer données avec selecteurs
+
+### Optomizer les performances
+
+- Utiliser la compilation en production
+- Éviter les rendus additionnels
+- Memoriser les composants avec le composant d'ordre supérieur memo()
+- Appliquer useCallback() pour améliorer la performance des callback
+- Appliquer useMemo() pour mémoriser les résultats
+
+### Gestion des erreurs et Suspense
+
+- Gérer les erreurs avec les ErrorBoundaries
+- Utiliser le Suspense pour le chargement de code
+- Utiliser le Suspense pour le chargement de données
+
+### Logins et identité
+
+- Gestion d'identité avec React
+- Implanter un formulaire Login et un bouton logout
+- Stocker et gérer les identifiants
+- Protéger les routes et les composants
+- JSON Web Tokens (JWT)
+- Comprendre et prévenir les vulnérabilités de sécurité
+
+### Comparer les Frameworks React
+
+- _Create-React-App_ des applications de base
+- _Vite_ pour le développement moderne et rapide
+- _Gatsby_ pour la génération de site statique
+- _Next.js_ pour le rendu côté serveur
+- _Astro_ pour le rendu côté serveur sans le JS client.
+- _Remix_ pour le chargement de données et la mise en page via le routage
+- _Preact_ pour un React léger
+
+### Advanced UI
+
+- Animer les transitions avec React-Spring
+- Générer graphiques avec Chart.js
+- Ajouter des cartes via Leaflet et ESRI
