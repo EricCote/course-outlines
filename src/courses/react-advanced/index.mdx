@@ -1,7 +1,7 @@
 ---
-title: "Advanced React"
-date: "2023-01-02"
-slug: "react-advanced"
+title: 'Advanced React'
+date: '2024-02-23'
+slug: 'react-advanced'
 ---
 
 ## Audience
@@ -17,7 +17,7 @@ Developers
 Once you know the basics of React, you are now ready to master the next level.
 We cover all the arcane topics, including: architectural patterns of React,
 custom hooks, render props, higher order components, performance optimization,
-shared context, lazy loading, reducer pattern, Redux, suspense loader, Next.js,
+shared context, lazy loading, reducer pattern, React Server Components, Suspense loader, Next.js,
 Remix, security and much more.
 
 We even use advanced components, like charts and maps.
@@ -35,6 +35,13 @@ We even use advanced components, like charts and maps.
 - Consuming context with hooks
 - Updating Context
 
+### Effects and useEffect()
+
+- Sync external systems with Effects
+- Make your component renders pure
+- Cleanup functions
+- Effects LifeCycle
+
 ### React Architecture Patterns
 
 - Separation of concerns in Components
@@ -49,20 +56,14 @@ We even use advanced components, like charts and maps.
 - Pillars: Storage, Dispatch, Reducer
 - Action helpers
 - Calling useReducer()
-
-### Redux Toolkit
-
-- Create a redux Store with configureStore()
-- Generate reducers and actions with slices
 - Write mutative code with "immer"
-- Filter data with selectors
 
-### Fetching Data with Redux RTK Query
+### TanStack Query
 
-- Configure middleware for caching, invalidation, and polling
-- Create an API Slice with endpoints
-- Calling the useQuery Hook
-- Adding a baseQuery function
+- Requests, deduplication, caching
+- Data Fetch
+- Data Updates
+- Plugins
 
 ### Optimize React performance
 
@@ -72,11 +73,32 @@ We even use advanced components, like charts and maps.
 - useCallback() to make it work properly with memoized callbacks
 - useMemo() to memoize results instead of callbacks
 
-### Error Boundaries and Suspense
+### Error Boundaries and Display management with Suspense
 
 - Managing Errors using ErrorBoundaries
 - Using Suspense for Lazy Loading
 - Using Suspense for Data Fetching
+
+### React Server Components (RSC)
+
+- RSC Architecture
+- Components: Server vs. Clients
+- Client boundaries
+- Client-Server separation
+- Async data and Suspense
+
+### React 19
+
+- Forms and actions
+- Transitions and animations
+- Metadata
+- Directives: "use client" and "use server"
+
+### Advanced UI
+
+- Animating transitions using React-Spring
+- Charts using Chart.js
+- Adding maps using Leaflet and ESRI
 
 ### Logins and Authentication
 
@@ -86,19 +108,3 @@ We even use advanced components, like charts and maps.
 - Protecting routes and components
 - JSON Web Tokens (JWT)
 - Understanding and preventing common security vulnerabilities
-
-### Comparing React Frameworks
-
-- _Create-React-App_ for basic apps
-- _Vite_ for quick development loops
-- _Gatsby_ for Static Site Generation
-- _Next.js_ for server-side rendering
-- _Astro_ for server-side rendering without client-side JS.
-- _Remix_ for data fetching and layout via routing
-- _Preact_ for lightweight React
-
-### Advanced UI
-
-- Animating transitions using React-Spring
-- Charts using Chart.js
-- Adding maps using Leaflet and ESRI

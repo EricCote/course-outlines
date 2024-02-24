@@ -1,7 +1,7 @@
 ---
-title: "React avancé"
-date: "2023-01-02"
-slug: "react-advanced"
+title: 'React avancé'
+date: '2024-02-23'
+slug: 'react-advanced'
 ---
 
 ## Auditoire
@@ -18,8 +18,7 @@ Maintenant que vous maîtrisez les fondements de React, vous êtes prêts
 à coder au niveau supérieur. Nous couvrons les sujets plus avancés,
 incluant: patrons d'architecture en React,
 Hooks personalisés, props de rendu, composants d’ordre supérieur,
-optimisation des performances, contexte partagé, découpage de code, patron réducteur, Redux, Suspense, Next.js,
-Remix, sécurité et bien plus.
+optimisation des performances, contexte partagé, découpage de code, patron réducteur, React Server Components, Suspense, Next.js, Remix, sécurité et bien plus.
 
 Nous couvrons aussi l'utilisation de composants avancés, tels que les graphiques et les cartes.
 
@@ -36,13 +35,20 @@ Nous couvrons aussi l'utilisation de composants avancés, tels que les graphique
 - Consommer le contexte avec des hooks
 - Mettre à jour le contexte
 
+### Effets et useEffect()
+
+- Synchroniser des systèmes externes avec les Effets
+- Rendre le rendu des composants purs
+- Fonction de Cleanup
+- Cycle de vie des Effets
+
 ### Patrons d'architecture React
 
 - Séparation des responsabilités dans nos composants
 - Composants d'ordre supérieur (Higher-Order component)
 - Props de Rendu (Render Props)
 - Hooks personnalisés
-- Réutiliser les composantes
+- Réutiliser les composants
 
 ### Patron réducteur (reducer)
 
@@ -50,20 +56,14 @@ Nous couvrons aussi l'utilisation de composants avancés, tels que les graphique
 - Piliers: Storage, Dispatch, Reducer
 - Générateurs d'action
 - Appeler useReducer()
+- Permettre les mutations avec "immer"
 
-### Toolkit Redux
+### TanStack Query
 
-- Utiliser configureStore() pour créer un store Redux
-- Générer des reducers et des actions avec des slices
-- Modifier l'état avec "immer"
-- Filtrer données avec selecteurs
-
-### Récupérer des données avec Redux RTK Query
-
-- Configurer le middleware pour activer le caching, l'invalidation, et le polling
-- Générer un consommateur d'API createApi()
-- Utiliser le Hook useQuery()
-- Ajouter une fonction baseQuery()
+- Requêtes, déduplication, caching
+- Fetch des données
+- Mises à jour
+- Plugins
 
 ### Optimiser les performances
 
@@ -73,11 +73,32 @@ Nous couvrons aussi l'utilisation de composants avancés, tels que les graphique
 - Appliquer useCallback() pour améliorer la performance des callback
 - Appliquer useMemo() pour mémoriser les résultats
 
-### Gestion des erreurs et Suspense
+### Gestion des erreurs et gestion de l'affichage avec Suspense
 
 - Gérer les erreurs avec les ErrorBoundaries
 - Utiliser le Suspense pour le chargement de code
 - Utiliser le Suspense pour le chargement de données
+
+### React Server Components (RSC)
+
+- Architecture de RSC
+- Composants Server vs. Composants Clients
+- Frontière Client
+- Découpage serveur-client
+- Données asynchrone et Suspense
+
+### React 19
+
+- Actions et Formulaires
+- Transitions et animations
+- Métadonnées
+- Directives "use client" et "use server"
+
+### Interfaces utilisateur avancées
+
+- Animer les transitions avec React-Spring
+- Générer graphiques avec Chart.js
+- Ajouter des cartes via Leaflet et ESRI
 
 ### Logins et identité
 
@@ -87,19 +108,3 @@ Nous couvrons aussi l'utilisation de composants avancés, tels que les graphique
 - Protéger les routes et les composants
 - JSON Web Tokens (JWT)
 - Comprendre et prévenir les vulnérabilités de sécurité
-
-### Comparer les Frameworks React
-
-- _Create-React-App_ des applications de base
-- _Vite_ pour le développement moderne et rapide
-- _Gatsby_ pour la génération de site statique
-- _Next.js_ pour le rendu côté serveur
-- _Astro_ pour le rendu côté serveur sans le JS client.
-- _Remix_ pour le chargement de données et la mise en page via le routage
-- _Preact_ pour un React léger
-
-### Interfaces utilisateur avancées
-
-- Animer les transitions avec React-Spring
-- Générer graphiques avec Chart.js
-- Ajouter des cartes via Leaflet et ESRI

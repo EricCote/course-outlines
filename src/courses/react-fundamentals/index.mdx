@@ -1,7 +1,7 @@
 ---
-title: "React Fundamentals"
-date: "2022-12-09"
-slug: "react-fundamentals"
+title: 'React Fundamentals'
+date: '2024-02-23'
+slug: 'react-fundamentals'
 ---
 
 ## Audience
@@ -30,34 +30,37 @@ Netflix, Instagram, Uber and Airbnb.
 
 ### Introduction to React
 
-- What is React? (previously known as ReactJS)
+- Presenting React?
 - Specs, pros and cons
-- Installation
-- React Hello World!
+- Setup requirements
+  - Node JS
+  - nvm
+- React _Hello World!_
 - Fast refresh and hot reloading
 - Building and deploying a React application
 
 ### JSX and rendering
 
-- Adding React to a blank page
+- Adding React to the root
 - JSX Language
-- Three phases of change: trigger, render, commit
 - JSX abstractions: createElement() and React Elements
+- Special attributes: className, style, key, etc.
+- Commit Optimizations
 
 ### Components
 
 - Functional Components
 - Properties (React Props and destructuring)
 - React State
+- Scheduling of setState
 - setState and mutations
 
-### Lifecycle
+### Component Architecture
 
-- Life and death of components
-- Scheduling of setState
-- Using effects with useEffect()
-- Dependency array
-- Cleanup effect
+- UI is a function of state
+- Three phases of change: trigger, render, commit
+- Component render and pure functions
+- State immutability (objects and array)
 
 ### Managing Events
 
@@ -75,11 +78,14 @@ Netflix, Instagram, Uber and Airbnb.
 - CSS, styles and CSS-in-js
 - Sass and Less
 - Post-CSS and autoprefixer
+- StyleX
 
 ### Routing
 
+- Using the key atribute
 - Navigation, NavBars and Links
 - Hash Links, History API, Navigation API
+- Using usesyncExternalStore()
 - React-Router-DOM
 
 ### Forms
@@ -91,7 +97,7 @@ Netflix, Instagram, Uber and Airbnb.
 
 ### Loading data into State
 
-- Using keys
+- Using Promises with `use()`
 - Using fetch() to get data from REST API
 - Modify data with a REST API
 - Asynchronous programming with JS
@@ -110,4 +116,4 @@ Netflix, Instagram, Uber and Airbnb.
 - Debugging Extension
 - Viewing the component tree
 - Analyzing performance with profiler
-- Detectimg what is re-rendered
+- Detecting what is re-rendered

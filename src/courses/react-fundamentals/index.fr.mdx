@@ -1,7 +1,7 @@
 ---
-title: "Fondements de React"
-date: "2022-12-09"
-slug: "react-fundamentals"
+title: 'Fondements de React'
+date: '2024-02-23'
+slug: 'react-fundamentals'
 ---
 
 ## Auditoire
@@ -29,9 +29,12 @@ Tesla).
 
 ### Introduction à React
 
-- Présentation de React? (aussi connu sous le nom ReactJS)
+- Présentation de React
 - Caractéristiques, avantages et inconvénients
-- Installation
+- Installation du poste de travail:
+  - Node JS
+  - nvm
+- Configuration de VS Code
 - _Hello World!_ en React
 - Fast refresh et hot reloading
 - Bâtir et déployer une application React
@@ -40,23 +43,24 @@ Tesla).
 
 - Ajouter une racine React
 - Langage JSX
-- Trois phases du changement: déclencheur, rendu et commit
-- Abstractions JSX: createElement() and éléments React
+- Abstractions JSX: createElement() et éléments React
+- Attributs spéciaux: className, style, key, etc.
+- Optimisations du commit
 
 ### Composants
 
 - Conposants Functionnels
 - Propriétés (Props React et décomposition)
 - État React
+- Cycle de setState
 - setState et mutations
 
-### Cycle de vie (Lifecycle)
+### Architecture de composants
 
-- Creation et destruction des components
-- Cycle du setState
-- Utiliser des effets avec useEffect()
-- Tableau de dépendences
-- Effet de nettoyage
+- IU est une fonction de l'état
+- Trois phases du changement: déclencheur, rendu et commit
+- Rendu des composant et fonctions pures
+- Immuabilité de l'état (objets et tableaux)
 
 ### Gestion des événements
 
@@ -74,11 +78,14 @@ Tesla).
 - CSS, styles et CSS-in-js
 - Sass et Less
 - Post-CSS et autopréfixage
+- StyleX
 
 ### Routage
 
+- Utiliser les clés
 - Navigation, NavBars et Liens
 - Hashlinks, History API, Navigation API
+- Utiliser useSyncExternalStore()
 - React-Router-DOM
 
 ### Formulaires
@@ -90,7 +97,7 @@ Tesla).
 
 ### Charger données dans le State
 
-- Utiliser des clés
+- Utiliser les promesses avec `use()`
 - Utiliser fetch() pour obtenir des données d’un API REST
 - Modifier les données avec un API REST
 - Programmation asynchrone en JS

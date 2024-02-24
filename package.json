@@ -17,8 +17,8 @@
   "dependencies": {
     "@ericcote/gatsby-theme-i18n": "^4.0.0",
     "@ericcote/gatsby-theme-i18n-react-i18next": "^4.0.0",
-    "@mdx-js/mdx": "^2.1.3",
-    "@mdx-js/react": "^2.1.3",
+    "@mdx-js/mdx": "^3.0.1",
+    "@mdx-js/react": "^3.0.1",
     "bootstrap": "^5.0.0",
     "gatsby": "^5.2.0",
     "gatsby-plugin-gatsby-cloud": "^5.2.0",
@@ -30,11 +30,11 @@
     "gatsby-plugin-sass": "^6.2.0",
     "gatsby-plugin-sitemap": "^6.2.0",
     "gatsby-source-filesystem": "^5.2.0",
-    "i18next": "^22.0.4",
+    "i18next": "^23.10.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
-    "react-i18next": "^12.0.0",
+    "react-i18next": "^14.0.5",
     "reactstrap": "^9.0.1",
     "sass": "^1.32.8"
   }
