@@ -1,0 +1,61 @@
+export function Title({ title, subtitle }) {
+return (
+<div className='card-header'>
+<h3 className='card-title'>{title}</h3>
+<h6 className='card-subtitle'>{subtitle}</h6>
+</div>
+);
+}
+
+<div className="card">
+
+<Title title="Jour 2" subtitle="Renforcez vos compétences">
+<div className="card-body">
+
+### Mise en page
+
+- CSS, styles et CSS-in-js
+- Sass et Less
+- Post-CSS et autopréfixage
+- StyleX
+
+### Routage
+
+- Utiliser les clés
+- Navigation, NavBars et Liens
+- Hashlinks, History API, Navigation API
+- Utiliser useSyncExternalStore()
+- React-Router-DOM
+
+### Formulaires
+
+- Composants controllés
+- Composants non-controllés
+- Refs
+- PreventDefault
+
+### Charger données dans le State
+
+- Utiliser les promesses avec `use()`
+- Utiliser fetch() pour obtenir des données d’un API REST
+- Modifier les données avec un API REST
+- Programmation asynchrone en JS
+- Utiliser les notifications
+
+### Chargerment des données en utilisant le routage
+
+- Data loaders en utilisant React-Router-Dom
+- Modification des données avec des actions
+- Le rôle des Formulaires
+- Suspense
+
+### Outillage React
+
+- Introduction à l'outillage React (dev tools)
+- Extension de déboggage
+- Visualiser l'aborescence
+- Analyse des performances avec le profilage
+- Détecter le re-rendu
+
+</div>
+</div>

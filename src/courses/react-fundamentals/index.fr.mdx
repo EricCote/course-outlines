@@ -1,6 +1,6 @@
 ---
 title: 'Fondements de React'
-date: '2024-02-23'
+date: '2024-02-27'
 slug: 'react-fundamentals'
 ---
 
@@ -27,60 +27,68 @@ Tesla).
 
 ---
 
-### Introduction à React
+export function New({ children = 'Nouveau' }) {
+  return (
+    <sup>
+      <span class='ms-1 text-primary badge bg-secondary'>{children}</span>
+    </sup>
+  );
+}
+
+##### Introduction à React
 
 - Présentation de React
 - Caractéristiques, avantages et inconvénients
 - Installation du poste de travail:
   - Node JS
   - nvm
-- Configuration de VS Code
+- Configuration de VS Code <New />
 - _Hello World!_ en React
 - Fast refresh et hot reloading
 - Bâtir et déployer une application React
 
-### JSX et rendu
+##### JSX et rendu
 
 - Ajouter une racine React
 - Langage JSX
 - Abstractions JSX: createElement() et éléments React
 - Attributs spéciaux: className, style, key, etc.
-- Optimisations du commit
+- Optimisations du commit <New/>
 
-### Composants
+##### Composants
 
 - Conposants Functionnels
 - Propriétés (Props React et décomposition)
 - État React
 - Cycle de setState
-- setState et mutations
+- setState et mutations <New/>
 
-### Architecture de composants
+##### Architecture de composants
 
 - IU est une fonction de l'état
 - Trois phases du changement: déclencheur, rendu et commit
 - Rendu des composant et fonctions pures
-- Immuabilité de l'état (objets et tableaux)
+- Immuabilité de l'état (objets et tableaux) <New/>
 
-### Gestion des événements
+##### Gestion des événements
 
 - Gestionnaires d'événements
 - Événements synthétiques
 
-### Programmation fonctionnelle avec Hooks
+##### Programmation fonctionnelle avec Hooks
 
 - Comment fonctionnent les Hooks
 - Règles des Hooks
 - Hooks personalisés
 
-### Mise en page
+##### Mise en page
 
 - CSS, styles et CSS-in-js
 - Sass et Less
 - Post-CSS et autopréfixage
-- StyleX
+- StyleX <New/>
 
-### Routage
+##### Routage
 
 - Utiliser les clés
 - Navigation, NavBars et Liens
@@ -88,29 +96,29 @@ Tesla).
 - Utiliser useSyncExternalStore()
 - React-Router-DOM
 
-### Formulaires
+##### Formulaires
 
 - Composants controllés
 - Composants non-controllés
 - Refs
 - PreventDefault
 
-### Charger données dans le State
+##### Charger des données vers le State
 
-- Utiliser les promesses avec `use()`
+- Utiliser les promesses avec `use()` <New/>
 - Utiliser fetch() pour obtenir des données d’un API REST
 - Modifier les données avec un API REST
 - Programmation asynchrone en JS
-- Utiliser les notifications
+- Utiliser les notifications <New>Option</New>
 
-### Chargerment des données en utilisant le routage
+##### Chargement des données en utilisant le routage
 
-- Data loaders en utilisant React-Router-Dom
+- Data loaders en utilisant React-Router-Dom <New>Option</New>
 - Modification des données avec des actions
 - Le rôle des Formulaires
 - Suspense
 
-### Outillage React
+##### Outillage React
 
 - Introduction à l'outillage React (dev tools)
 - Extension de déboggage
